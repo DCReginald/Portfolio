@@ -1,0 +1,24 @@
+
+nav{
+    display: grid;
+    grid-area: nav;
+}
+
+
+main{
+    display: grid;
+    grid-area: main;
+    height: 45em;
+    
+}
+aside{
+    display: grid;
+    grid-area: aside;
+    color: white;
+
+}
+footer{
+    display: grid;
+    grid-area: footer;
+}
+

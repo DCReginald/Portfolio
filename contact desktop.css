@@ -1,0 +1,93 @@
+
+h1{
+    font-style: italic;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body{
+    background: linear-gradient(to left, black,white,gold,white,gray,white,black);
+    background-size: 300%;
+    animation: B-animation 6s infinite alternate;
+}
+@keyframes B-animation{
+   0% {background-position: left;}
+   100% {background-position: right;}
+    
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+nav h1{
+    margin-left: 10%;
+    text-transform: uppercase;
+}
+
+nav ul{
+   margin-right: 10%;
+   word-spacing: 10mm;
+}
+
+nav ul li{
+    
+    display: inline-block;
+    font: bold;
+    
+    
+}
+nav ul li a{
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+    
+}
+
+
+main{
+    outline: 2px solid black;
+    background-color: white;
+    width: 500px;
+    height: 500px;
+    margin-left: 35%;
+    margin-top: 8%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form{
+    
+   display: grid;
+   grid-template-columns: 50% 50%;
+   align-items: center;
+   width: 500px;
+   grid-gap: 1em;
+   margin-left: 20%;
+   margin-right: 20%;
+   
+   
+}
+.input{
+   width: 300px;
+   height: 30px;
+   outline: 1px solid black;
+   margin-top: 1em;
+   
+}
+
+.text{
+    width: 300px;
+    outline: 1px solid black;
+    
+}
+.button{
+    width: 310px;
+    height: 30px;
+    
+    text-transform: capitalize;
+    background-color: gray;
+}
