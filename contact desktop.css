@@ -36,8 +36,11 @@ nav ul li{
     
     display: inline-block;
     font: bold;
-    
-    
+ 
+}
+nav ul li:hover{
+    letter-spacing: 7px;
+    text-decoration: underline;
 }
 nav ul li a{
     color: black;

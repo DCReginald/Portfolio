@@ -11,12 +11,7 @@ main{
     height: 45em;
     
 }
-aside{
-    display: grid;
-    grid-area: aside;
-    color: white;
 
-}
 footer{
     display: grid;
     grid-area: footer;
