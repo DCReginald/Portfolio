@@ -75,4 +75,6 @@ section{
     padding: 10px 30px;
     outline: 2px solid gray ;
 }
-
+.toggler{
+    display: none;
+}

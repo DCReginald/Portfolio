@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+    
+body{
+    padding: 5px;
+    color: white;   
+}
+
+h2{
+    margin-top: 2cm;
+    font-size: 50px;
+    font-style: italic;
+    margin-bottom: 2cm;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 5px 5px 30px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10%;
+    margin-right: 10%;
+
+}
+ nav h3{
+     font-size: 25px;
+      margin-top: 5mm;
+      outline: 2px solid white;
+      width: 8cm;
+      height: 2cm;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+     
+  }
+
+nav ul li{
+    display: inline-block;
+    margin: 10px 30px;
+    
+}
+
+
+
+nav ul li a{
+      display: inline-block;
+      text-decoration: none;
+      color: white;
+      font: bold;
+      font-size: 20px;
+      padding: 30px;   
+      
+}
+nav ul li a:hover{
+    letter-spacing: 7px;
+    background-color: #FFFFFF33;
+}
+
+img{
+    width: 100%;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+section{
+    padding: 10px 30px;
+    outline: 2px solid gray ;
+}
+
+.toggler{
+   position:absolute;
+   top:25px;
+   right:25px;
+   width:4em;
+   height:4em;
+   z-index:2;
+   opacity:0;
+   cursor:pointer;  
+}
+
+.toggle{
+   position:absolute;
+   top:25px;
+   right:25px;
+   width:4em;
+   height:2.5em;
+   border-top:0.6em solid white;
+   border-bottom:0.6em solid white;
+   background-color: inherit;
+   display:flow-root;
+   align-items: center;
+   justify-content: center;
+   border-radius:0.3em;
+   transition:all 0.5s ease;
+   padding: 0.8px;
+}
+
+.toggle:before{
+
+   content:'';
+   position:absolute;
+   width:4em;
+   margin-top: 0.9em;
+   border-top:0.6em solid white;
+}
+
+.toggler:checked + .toggle{
+    transform: rotate(140deg);
+    border-top: 0;
+}
+
+.toggler:checked + .toggle:before,
+.toggler:checked + .toggle:after{
+    top:25px;
+    transform: rotate(90deg);
+}
+.toggler:checked:hover + .toggle{
+   transform:rotate(225deg);
+}
+
+
+
+
+.menu{
+   background:#242222;
+   height:100%;
+   width:100%;
+   display:flex;
+   visibility:hidden;
+   
+   
+}
+
+.toggler:checked  ~ .menu{
+   visibility:visible;
+   opacity:0.8;
+   transform:scale(1);
+   display:flex;
+   align-items:center;
+   justify-content:center; 
+   width: 50vh;
+}
