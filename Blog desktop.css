@@ -83,6 +83,11 @@ main img{
       font-size: 30px;
       margin-bottom: 2cm;
   }
+
+.toggler{
+    display: none;
+}
+ 
  
 
 

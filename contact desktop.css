@@ -98,5 +98,10 @@ form{
 }
 .toggler{
    display: none;
-    margin-right: 0;
+    margin-right: 0%;
+    width: 0%;
+}
+
+.menu{
+    width: 05;
 }
