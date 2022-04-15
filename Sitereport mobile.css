@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&family=Titillium+Web:ital,wght@0,400;1,300;1,400&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+
+
+
+
+  nav{
+      display: flex;
+      justify-content: space-between;
+      background-color: black;
+      color: white;
+      height: 3cm;
+      
+  }
+
+  nav h3{
+      margin-top: 5mm;
+      outline: 2px solid white;
+      width: 8cm;
+      height: 2cm;
+      margin-left: 15%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+     
+  }
+
+  nav ul{
+      margin-right: 15%;
+      
+  }
+
+  nav ul li{
+      margin-top: 5mm;
+      display: inline-block;
+      padding: 10px 30px;
+  }
+  nav ul li:hover{
+      letter-spacing: 7px;
+      background-color: #FFFFFF33;
+  }
+
+  nav ul li a{
+      text-decoration: none;
+      list-style-type: none;
+      color: inherit;
+      text-transform: capitalize;
+      font-size: 20px;
+      font: bold;   
+  }
+    h2{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 70px; 
+       
+  }
+
+  h3{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 30px;
+      margin-bottom: 2cm;
+  }
+
+  main{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 100px ;
+  }
+
+  .date{
+      font-size: 20px;
+  }
+
+  h4{
+      font-size: 20px;
+  }
+  section{
+      outline: 2px solid rgb(205, 200, 200);
+  }
+
+  .toggler{
+   position:absolute;
+   top:25px;
+   right:25px;
+   width:4em;
+   height:4em;
+   z-index:2;
+   opacity:0;
+   cursor:pointer;  
+}
+
+.toggle{
+   position:absolute;
+   top:25px;
+   right:25px;
+   width:4em;
+   height:2.5em;
+   border-top:0.6em solid white;
+   border-bottom:0.6em solid white;
+   background-color: inherit;
+   display:flow-root;
+   align-items: center;
+   justify-content: center;
+   border-radius:0.3em;
+   transition:all 0.5s ease;
+   padding: 0.8px;
+}
+
+.toggle:before{
+
+   content:'';
+   position:absolute;
+   width:4em;
+   margin-top: 0.3em;
+   border-top:0.6em solid white;
+}
+
+.toggler:checked + .toggle{
+    transform: rotate(140deg);
+    border-top: 0;
+}
+
+.toggler:checked + .toggle:before,
+.toggler:checked + .toggle:after{
+    top:25px;
+    transform: rotate(90deg);
+}
+.toggler:checked:hover + .toggle{
+   transform:rotate(225deg);
+}
+
+
+
+
+.menu{
+   background:#242222;
+   height:100%;
+   width:100%;
+   display:flex;
+   visibility:hidden;
+   
+   
+}
+
+.toggler:checked  ~ .menu{
+   visibility:visible;
+   opacity:0.8;
+   transform:scale(1);
+   display:flex;
+   align-items:center;
+   justify-content:center; 
+   width: 30vh;
+   height: 50vh;
+}
